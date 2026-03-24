@@ -1,6 +1,7 @@
 import { Card, SessionState, Mode, Role, SessionType, ClientViewMode } from './types';
 
-export const INITIAL_DECK: Card[] = [];
+import { deck as BUILT_IN_DECK } from './deck';
+export const INITIAL_DECK: Card[] = BUILT_IN_DECK;
 
 export const INITIAL_STATE: SessionState = {
   sessionId: 'DEMO-123',
